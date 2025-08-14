@@ -11,11 +11,12 @@ main {
 .sidebar {
     background:  transparent;
 	border: 1px solid rgba(255, 255, 255, 0.2);
-	backdrop-filter: blur(0px);
+	backdrop-filter: blur(2px);
 }
 
 .top-row {
-    background-color: #f7f7f7;
+    background-color: #00c6ff;
+	backdrop-filter: blur(0px);
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
     height: 3.5rem;
