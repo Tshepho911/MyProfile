@@ -620,7 +620,8 @@ main[b-vf4pllc1qn] {
   display: flex;
   flex-wrap: wrap;
   gap: 4rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding-left: 24rem; 
 }
 
 .btnspace[b-kkcnwxnzir] {
