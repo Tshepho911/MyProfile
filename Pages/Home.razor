@@ -1,18 +1,10 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
-
-<div class="animation-wrapper">
-		<div class="particle particle-1"></div>
-		<div class="particle particle-2"></div>
-		<div class="particle particle-3"></div>
-		<div class="particle particle-4"></div>
-</div>
-
-<section class="hero">    
-
-		<section class="hero-section">
-			
+<PageTitle>Home</PageTitle>		
+ 
+	<section class="hero"> 	
+	
+		<section class="hero-section">			
 			<div class="hero-card">
 				<h1>Empowering Ideas Through Code</h1>
 				<p>Computer Scientist & Applied Mathematician | Backend Engineer | Server Strategist | Front-End Enthusiast</p>
@@ -27,47 +19,86 @@
 				    <div class="item3">					  		  
 						  <ppp>Solving complex problems through secure, high-performance code.</ppp> 
 						  <br>
-					</div>	  
-					
-				</div>
+					</div>	  					
+				</div>				
 			</div>
+			
 		</section>   
-    
-        <div class="profile-card1">
-            <div class="bio">                
-                    <p>
-                        <h2>👋 About Me</h2>
-                        Hello and welcome to my online profile!
-                        I'm Diamond — a passionate <a href = "PersonalDetails"> Computer Scientist</a> and Applied Mathematician specializing in <a href="#projects">Software Development</a>, **Web Hosting**, and **Server Management**.
-                        As a resilient problem solver, I thrive on writing high-performance, secure code. My interests span **Data Science**, **Machine Learning**, and **AI**, and I enjoy building programs that think smart.
-                        Though I’m a full-stack developer, my heart lies in backend engineering — the brains behind the screen. I bring clever configurations and server-side magic to life.
-                        As a strong team leader, I know how to align team roles with individual strengths and weaknesses for maximum impact.
-                        <br><br>    My love for solving and resolving complex daily life problems and tasks with computer programmes, drives me to create innovative solutions that make a difference. I believe in the power of technology to transform lives and am committed to continuous learning and growth in this ever-evolving field.
-                        I would love to see myself one day building a software programme that helps humanity in enhancing their abilities and capabilities.  
-                        <br><br>
-                        Feel free to explore my <a href="/projects">Projects</a> and get a glimpse of what I’ve been building!
-                   </p>
-                  
-                    <ul>
-                      <li>🔍 Obsessed with optimization and automation</li>
-                      <li>🧠 Exploring AI, Machine Learning, and Data Science</li>
-                      <li>🌐 Building scalable, resilient server architectures </li>
-                    </ul>
-                    <p>
-                    I believe in purpose-driven technology — software that enhances human capability and transforms lives. My mission: create tools that make the complex feel effortless.
-                   </p>
-				 <div class="footerSct">
-                     <div><a href="/projects" class="cta-button">See My Projects</a>  </div>
-                    <div><a href="/contactMe" class="cta-button">📨 Contact Me</a></div>
+		 
+		<section class="hero-section">
+		
+				<div class="flex-container">
+					<h2>👋 welcome to my online profile!</h2>
+						<motto>
+							<p>
+								I believe in purpose-driven technology — software that enhances human capability and transforms lives. My mission: create tools that make the complex feel effortless.
+							</p>  
+					    </motto>
+					<div2>	
+							
+						<p>							
+							I'm Diamond — a passionate <a href = "PersonalDetails"> Computer Scientist</a> and Applied Mathematician specializing in <a href="#projects">Software Development</a>, **Web Hosting**, and **Server Management**.
+							As a resilient problem solver, I thrive on writing high-performance, secure code. My interests span **Data Science**, **Machine Learning**, and **AI**, and I enjoy building programs that think smart.
+							Though I’m a full-stack developer, my heart lies in backend engineering — the brains behind the screen. I bring clever configurations and server-side magic to life.
+							As a strong team leader, I know how to align team roles with individual strengths and weaknesses for maximum impact.
+						</p>
+                    </div2>
+					
+					<div1> 
+					<div class="list"> 
+					  <img src="Assets\Images\Profile\web-appdev.jpg" alt="Web-application ">
+						<ul>
+						  <li style="--i: 3">🌐 Building scalable, resilient server architectures</li>
+						  
+						</ul>
+					</div>
+					</div1>
+					
+					<div2>
+						<p>							
+							<br> <br>    My love for solving and resolving complex daily life problems and tasks with computer programmes, drives me to create innovative solutions that make a difference. I believe in the power of technology to transform lives and am committed to continuous learning and growth in this ever-evolving field.
+							I would love to see myself one day building a software programme that helps humanity in enhancing their abilities and capabilities.  
+							<br><br>
+							Feel free to explore my <a href="/projects">Projects</a> and get a glimpse of what I’ve been building!
+					   </p>
+					</div2>
+			
+					<div1>
+						<div class="list"> 				
+						  <img src="Assets\Images\Profile\softdeve.jpg" alt="software dev pic">
+							<ul>
+							  <li style="--i: 1">🔍 Obsessed with optimization and automation</li>
+							  <li style="--i: 2">🧠 Exploring AI, Machine Learning, and Data Science</li>							  
+							</ul>
+						</div>
+					</div1>		
+					
+					 <div class="btnContainer">
+						<p>	
+							 <a href="/projects" class="cta-button">See My Projects</a>  
+								
+							 <a href="/contactMe" class="cta-button">📨 Contact Me</a>
+						</p>
+					 </div>						
 				</div>
-            </div>        
-     </div>   
-    
-</section>
- <div class="profile-card1">
+				
+			
+		</section>  
+		
+	</section>
+@*
+<button @onclick="() => showDebugLines = !showDebugLines">
+    Toggle Debug Lines
+</button>
+*@
+ <div class="aboutMe">
 	<div class="bio">
 		<footer>
 			<p>&copy; 2025 Tshepho's Profile. All rights reserved.</p>
 		</footer>
 	</div> 
-</div> 
+ </div> 
+
+@code {
+    private bool showDebugLines = true; // Toggle this to show/hide red lines
+}

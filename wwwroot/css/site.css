@@ -162,4 +162,17 @@ ppp:hover, h4:hover {
   }
 }
 
+
+.debug-border {
+    border: 1px solid red;
+}
+
+.debug-outline {
+    outline: 2px dashed red;
+}
+
+
+
+
 /*# sourceMappingURL=myparticles.css.map */
+

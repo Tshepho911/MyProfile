@@ -4,7 +4,7 @@ echo ######Publishing project...
 dotnet publish -c Release -o publish
 
 REM === Step 2: Navigate to build output ===
-cd publish\wwwroot
+cd publish\wwwrootg
 
 REM === Step 3: Clean current remote gh-pages branch ===
 echo ######Wiping gh-pages branch on remote...

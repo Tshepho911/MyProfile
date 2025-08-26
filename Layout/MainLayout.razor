@@ -1,13 +1,30 @@
 ﻿@inherits LayoutComponentBase
 <div class="page">
 	
-    <div class="sidebar">
-        <NavMenu />
-    </div>
-
     <main>
         <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+			 <header class="navmenu">
+			  <nav>
+				<div class="nav-header">	
+
+					<button class="menu-toggle" @onclick="ToggleMenu">
+					  ☰
+					  
+					</button>
+					@if(isMenuOpen == false){
+						<a href="/" class="logo">Home</a>
+					}
+					</div> 
+					
+					<ul class="nav-links @(isMenuOpen ? "open" : "")">
+					  <li><a href="/" >My Profile</a></li>
+					  <li><a href="/ContactMe">Contact Me</a></li>
+					  <li><a href="/Projects">Projects</a></li>
+					  <li><a href="/Services">My Services</a></li>
+					  <li><a href="/Skills">My Skills</a></li>
+					</ul>			
+			  </nav>
+			</header>           
         </div>
 
         <article class="content px-4">
@@ -15,3 +32,13 @@
         </article>
     </main>
 </div>
+
+
+@code {
+  private bool isMenuOpen = true;
+
+  private void ToggleMenu()
+  {
+    isMenuOpen = !isMenuOpen;
+  }
+}

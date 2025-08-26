@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "MyProfile",
   "resources": {
-    "hash": "sha256-Pr36CfzVxsPVuhJ8EB/FaTrc76tc9MgFsx2Yf008yFA=",
+    "hash": "sha256-kvhun/bcbVnzOTAtXESmVaE0mLeOpUy7JB4hOoDt1p4=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-3HZ52x+8yne6v3PFF0PCuJ0GMsv8fAp3sXAOwLYGZQk="
     },
@@ -49,7 +49,7 @@
       "System.Text.Json.wasm": "sha256-u117yrdJrUX/Q+qzw1fc65jx/ra8VGCzdSzuYl4xMUE=",
       "System.Text.RegularExpressions.wasm": "sha256-hGZleNEZV17Dz5kzEWFvNqnurwCDj1PZ9QMtVOHwaI0=",
       "System.Private.CoreLib.wasm": "sha256-HLwNl20nHgugYun92Rav7cGNU651cj35ODobUnw67u8=",
-      "MyProfile.wasm": "sha256-WHNmq7BVI9v+49J2JjhZYwYSaCt+/lLftPqzX4eVoHA="
+      "MyProfile.wasm": "sha256-N0VnFTQDZfqlwEPsIF+S8qJYfd1I38LAPcTOv1ibZL4="
     }
   },
   "cacheBootResources": true,

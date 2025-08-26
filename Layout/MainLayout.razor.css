@@ -8,6 +8,79 @@ main {
     flex: 1;
 }
 
+.navmenu {
+  width: 100%;
+  background-color: #0f2027;
+  padding: 2rem 0rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navmenu nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navmenu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+
+.navmenu ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navmenu a:hover {
+  color: #00bcd4;
+}
+
+.nav-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding-left: 2rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
 .sidebar {
     background:  transparent;
 	border: 1px solid rgba(255, 255, 255, 0.2);
@@ -15,13 +88,15 @@ main {
 }
 
 .top-row {
-    background-color: #00c6ff;
+    background-color:  #0f2027;
 	backdrop-filter: blur(0px);
     border-bottom: 1px solid #d6d5d5;
-    justify-content: flex-end;
-    height: 3.5rem;
+    justify-content: space-center;
+    height: auto;
+	min-height: 3.5rem;
     display: flex;
     align-items: center;
+	padding: 0 1rem;
 }
 
     .top-row ::deep a, .top-row ::deep .btn-link {
@@ -39,14 +114,49 @@ main {
         text-overflow: ellipsis;
     }
 
+
+/*mobile styles 8*/
 @media (max-width: 640.98px) {
     .top-row {
         justify-content: space-between;
     }
-
+	
+	.nav-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+	
     .top-row ::deep a, .top-row ::deep .btn-link {
         margin-left: 0;
     }
+	
+   .mobileView {
+	   font-size: 1.1rem;	   
+   }
+	
+	.menu-toggle {
+    font-size: 2rem;
+    display: block;
+  }
+   .logo {
+    font-size: 1.2rem;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #203a43;
+    padding: 1rem;
+    border-radius: 8px;
+	padding: 2rem;
+  }
+	
+	.nav-links.open {
+    display: none;
+	
+  }
+	
 }
 
 @media (min-width: 641px) {
@@ -77,4 +187,12 @@ main {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
+	
+	.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+	padding: 2rem;
+  }
 }

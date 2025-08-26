@@ -1,0 +1,301 @@
+.flex-container {
+  display: flex;  
+  
+  flex-direction: column;
+  background-color: transparent;
+  backdrop-filter: blur(2px);
+  border-radius: 12px;  
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 50px auto;
+  padding: 1rem;
+  color: white;
+  justify-content: space-between; 
+}
+
+.flex-container p{
+	color: white;
+	font-size:  1.1rem;
+	text-align: left;
+}
+
+.flex-container h2 {
+	font-size: clamp(2.1rem, 4vw, 3.4rem);
+    font-weight: 600;       
+	margin-bottom: 10px;
+	color: #00c6ff;	
+	text-align: center;
+}
+
+.flex-container  .list{  
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  background: transparent;
+  padding: 1rem;
+  gap: 1.5rem;
+  font-size: clamp(1.1rem, 4vw, 2.1rem);
+  max-width: 100%;
+  text-align: left;
+}
+
+.flex-container .list img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+	.list img:hover {
+	  transform: scale(1.05);
+	  transition: transform 0.3s ease;
+	  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+	}
+
+	.flex-container  .list > ul{
+	  list-style: none;
+	  padding: 0;
+	  margin: 0;
+	}
+
+
+	
+	.flex-container .list li {
+	  font-size: 1.1rem;
+	  opacity: 0;
+	  transform: translateY(10px);
+	  animation: fadeInUp 0.6s ease forwards;
+	  animation-delay: calc(var(--i) * 0.2s);
+	}
+
+	@keyframes fadeInUp {
+	  to {
+		opacity: 1;
+		transform: translateY(0);
+	  }
+	}
+
+
+
+	.flex-container  .list > li{	
+	   margin-bottom: 0.5rem;
+	 ` font-size: clamp(2.8rem, 4vw, 3.8rem); 
+	  `text-align: left;
+	}
+	
+		.flex-container .list li:hover {
+		  color: #00ffff;
+		  transition: color 0.3s ease;
+		}
+
+.flex-container > motto {
+  font-size: clamp(1.1rem, 4vw, 2.1rem);
+  max-width: 40%;
+  background: black;
+  align-self: center;
+  text-align: left;
+  border-radius: 18px;  
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding : 1rem;
+  
+}
+		.flex-container .list motto:hover {
+		  color: #00ffff;
+		  transition: color 0.3s ease;
+		}
+
+.flex-container > div1 {
+  align-self: flex-end;
+}
+
+
+.flex-container > div2, div1 {
+  width: 60%;
+  margin: 10px;
+  padding: 1rem;
+  text-align: left;
+  line-height: auto;
+  font-size: 30px;
+  backdrop-filter: blur(1px);
+  border-radius: 18px;  
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+	
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  text-align: center;
+  width: 100%;
+  gap: 5rem;
+ /* background-color: dodgerblue;*/  
+  justify-content: space-between;
+  align-self: center;  
+  font-size: 1.1rem;
+  
+}
+
+.btnContainer p{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: space-between;
+}
+
+.btnspace {
+gap : 34rem;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 2rem;
+    border-radius: 12px;    
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.05); 
+  /*  background: linear-gradient(to right, #121212, #1f1f1f);*/
+	backdrop-filter: blur(4px);
+    color: #f9f9f9;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 100%;
+    margin: 50px auto;
+}
+
+.aboutMe .bio {
+  flex: 1
+}
+
+.aboutMe .bio > divabout  {
+  max-width: 50%;
+  align-self: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.aboutMe .bio .greet img {
+	align-self: flex-end;
+    width: 33%;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease-in-out;
+}
+
+    .aboutMe bio img:hover {
+        transform: scale(1.03);
+    }
+
+    .aboutMe .bio h2 {
+		
+	  font-size: clamp(1.5rem, 4vw, 2.5rem);
+	  font-weight: 600;       
+        margin-bottom: 10px;
+        color: #00c6ff;
+        
+    }
+
+    .aboutMe .bio p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #cccccc;
+		text-align: center;
+    }
+
+.aboutMe .btn 
+ {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #00c896;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    transition: transform 0.3s ease;
+	max-width: 200px;
+}
+
+    .aboutMe .btn:hover {
+        background: #009e7e;
+        transform: scale(1.05);
+    }
+
+
+@media (max-width: 600px) {
+	
+.flex-container > div2, div1 {
+  width: 100%;
+  max-width: 600px;
+}
+
+.flex-container .list img {
+	  height: auto;
+	  border-radius: 8px;
+	  
+	} 
+
+.flex-container > motto {
+  font-size: clamp(1.1rem, 4vw, 2.1rem);
+  max-width: 100%;
+}
+
+  .aboutMe {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 20px;
+  }
+
+  .aboutMe img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+ .aboutMe .bio {
+    width: 100%;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .aboutMe .bio h2 {
+    font-size: 1.5rem;
+  }
+
+  .aboutMe .bio p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .aboutMe .btn 
+ {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #00c896;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    transition: transform 0.3s ease;
+	max-width: 200px;
+}
+
+    .aboutMe .btn:hover {
+        background: #009e7e;
+        transform: scale(1.05);
+    }
+	
+	  .list {
+		flex-direction: column;
+		align-items: flex-start;
+	  }
+
+	  .list img {
+		max-width: 100%;
+	  }
+}
+
