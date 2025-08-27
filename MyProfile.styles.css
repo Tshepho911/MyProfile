@@ -58,11 +58,14 @@ main[b-vf4pllc1qn] {
   gap: 1.5rem;
   list-style: none;
   padding-left: 2rem;
+   transition: opacity 0.3s ease;
+  opacity: 1;
 }
 
 .nav-links li a[b-vf4pllc1qn] {
   color: white;
   text-decoration: none;
+ 
 }
 
 .logo[b-vf4pllc1qn] {
@@ -151,12 +154,23 @@ main[b-vf4pllc1qn] {
     padding: 1rem;
     border-radius: 8px;
 	padding: 2rem;
+	transition: opacity 0.3s ease;
+	opacity: 1;
   }
+  
+.nav-links.closed[b-vf4pllc1qn] {
+  opacity: 0;
+  pointer-events: none;
+}
+  
+   .nav-links.closed[b-vf4pllc1qn] {
+  opacity: 0;
+  pointer-events: none;
+}
 	
-	.nav-links.open[b-vf4pllc1qn] {
-    display: none;
-	
-  }
+.nav-links.open[b-vf4pllc1qn] {
+display: none;
+}
 	
 }
 
@@ -189,12 +203,20 @@ main[b-vf4pllc1qn] {
         padding-right: 1.5rem !important;
     }
 	
+		
+	.nav-links.closed[b-vf4pllc1qn] {
+	  opacity: 0;
+	  pointer-events: none;
+	}
+	
 	.nav-links[b-vf4pllc1qn] {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
 	padding: 2rem;
+	transition: opacity 0.3s ease;
+    opacity: 1;
   }
 }
 /* /Layout/NavMenu.razor.rz.scp.css */
@@ -308,7 +330,7 @@ main[b-vf4pllc1qn] {
 .card:hover[b-vkfu67gh8m]
  {
 	background: #009e7e;
-	transform: scale(2.05);
+	transform: scale(1.65);
 }
 .contact-hero[b-vkfu67gh8m] {
   width : 80%;
@@ -493,7 +515,6 @@ main[b-vf4pllc1qn] {
   margin: 50px auto;
   padding: 1rem;
   color: white;
-  justify-content: space-between; 
 }
 
 .flex-container p[b-kkcnwxnzir]{
@@ -610,7 +631,8 @@ main[b-vf4pllc1qn] {
   width: 100%;
   gap: 5rem;
  /* background-color: dodgerblue;*/  
-  justify-content: space-between;
+   justify-content: space-between;
+  padding-left: 24rem; 
   align-self: center;  
   font-size: 1.1rem;
   
@@ -620,8 +642,7 @@ main[b-vf4pllc1qn] {
   display: flex;
   flex-wrap: wrap;
   gap: 4rem;
-  justify-content: space-evenly;
-  padding-left: 24rem; 
+ 
 }
 
 .btnspace[b-kkcnwxnzir] {
@@ -707,6 +728,17 @@ gap : 34rem;
 
 
 @media (max-width: 600px) {
+	
+	
+.btnContainer[b-kkcnwxnzir] {
+  display: flex;
+  
+   justify-content: space-between;
+ padding-left: 4rem;
+  font-size: 1.1rem;
+  
+}
+
 	
 .flex-container > div2[b-kkcnwxnzir], div1[b-kkcnwxnzir] {
   width: 100%;
