@@ -15,7 +15,7 @@ body {
 }
 */
 .page-bg, .animation-wrapper {
-  position: fixed
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -114,8 +114,9 @@ body {
   color: #fff;
   z-index: 2;
 }
+
 h4 {
-font-size: 60px;
+	font-size: 60px;
 }
 
 ppp, h4 {

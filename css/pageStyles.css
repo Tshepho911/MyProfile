@@ -224,6 +224,9 @@ p {
 
 
 .pg-progress {
+		position: relative;
+		z-index: 0;
+		
 		gap: 30px;
 		background: transparent;
 		backdrop-filter: blur(1px);

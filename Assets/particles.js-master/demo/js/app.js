@@ -3,11 +3,16 @@
 /* ----------------------------------------------- */
 
 /* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-/*
+
 particlesJS.load('particles-js', 'particles.json', function() {
   console.log('particles.js loaded - callback');
 });
-*/
+
+particlesJS.load('particles-js', 'Assets/particles.js-master/demo/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
+
 
 /* Otherwise just put the config content (json): */
 
