@@ -83,6 +83,7 @@ main[b-vf4pllc1qn] {
   border: none;
   color: white;
   cursor: pointer;
+  z-index: 1000;
 }
 
 
@@ -93,6 +94,7 @@ main[b-vf4pllc1qn] {
 }
 
 .top-row[b-vf4pllc1qn] {
+	position: fixed;
     background-color:  #0f2027;
 	backdrop-filter: blur(0px);
     border-bottom: 1px solid #d6d5d5;
@@ -102,6 +104,7 @@ main[b-vf4pllc1qn] {
     display: flex;
     align-items: center;
 	padding: 0 1rem;
+	 z-index: 100;
 	
 }
 
@@ -124,12 +127,25 @@ main[b-vf4pllc1qn] {
 /*mobile styles 8*/
 @media (max-width: 640.98px) {
     .top-row[b-vf4pllc1qn] {
+		position: sticky;
+	    top: 0;
+	    left: 0;
+        width: 100%;
+        z-index: 1000;
         justify-content: space-between;
     }
 	
 	.nav-header[b-vf4pllc1qn] {
+	
     flex-direction: row;
     justify-content: space-between;
+  }
+  .navmenu[b-vf4pllc1qn] {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  z-index: 1000;
   }
 	
     .top-row[b-vf4pllc1qn]  a, .top-row[b-vf4pllc1qn]  .btn-link {
@@ -143,6 +159,7 @@ main[b-vf4pllc1qn] {
 	.menu-toggle[b-vf4pllc1qn] {
     font-size: 2rem;
     display: block;
+	 z-index: 1000;
   }
    .logo[b-vf4pllc1qn] {
     font-size: 1.2rem;
@@ -173,6 +190,10 @@ main[b-vf4pllc1qn] {
 .nav-links.open[b-vf4pllc1qn] {
 display: none;
 }
+
+  main[b-vf4pllc1qn] {
+    padding-bottom:6rem; /* ✅ Add top padding to prevent content hiding behind nav */
+  }
 	
 }
 
@@ -189,6 +210,8 @@ display: none;
     }
 
     .top-row[b-vf4pllc1qn] {
+		/*position: fixed;*/
+	   
         position: sticky;
         top: 0;
         z-index: 1;
@@ -741,8 +764,10 @@ display: none;
 
 
 @media (max-width: 600px) {
-	
-	
+
+.hero-section[b-kkcnwxnzir] {
+	margin-top: 3rem;
+}
 .btnContainer[b-kkcnwxnzir] {
 	display: flex;  
 	justify-content: space-between;
@@ -927,7 +952,6 @@ i[b-x28k3myjfn] {
 .textContainer:hover[b-x28k3myjfn] {
 	transform: scale(1.04);
 	/*background:#867e8c;*/
-	
 }
 
 .pg-progress1[b-x28k3myjfn] {
@@ -969,16 +993,9 @@ h1[b-x28k3myjfn], h2[b-x28k3myjfn] {
     align-items: center;
     text-align: center;
   }
-/*
-  .desktop img,
-  .webApps img,
-  .mobileApps img {
-    width: 90%;
-    height: auto;
-    margin-bottom: 1rem;
-    border-radius: 12px;
-  }
-  */
+.myServicesPage[b-x28k3myjfn]	{
+	margin-top: 3rem;
+}
   .imgContainer[b-x28k3myjfn] {
 	width: 95%;
 }
@@ -1053,4 +1070,13 @@ h1[b-213e1jmt4f] {
 	height: 250px;
 }
 
+
+
+@media (max-width: 600px) {
+  .mySkillsPage[b-213e1jmt4f]{
+    flex-direction: column;
+	margin-top: 3rem;
+  }
+  
+}
 
