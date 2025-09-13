@@ -849,8 +849,7 @@ display: none;
 }
 
 .myServicesPage h2[b-x28k3myjfn]{	
-	margin: 4rem;
-	padding : 0rem;
+	
 	font-size: 3.0rem;
 }
 
@@ -941,8 +940,9 @@ i[b-x28k3myjfn] {
 		box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 		font-family: 'Segoe UI', sans-serif;
 		max-width: 100%;
-		margin: 50px auto;	
-		padding: 24px;		
+		margin: 10px auto;	
+		padding-bottom: 10px;	
+		text-align: center;
 }
 
 
@@ -1022,7 +1022,7 @@ h1[b-x28k3myjfn], h2[b-x28k3myjfn] {
 
   .pg-progress1[b-x28k3myjfn] {
     padding: 16px;
-    margin: 30px auto;
+    margin-bottom: 30px;
   }
 }
 /* /Pages/Skills.razor.rz.scp.css */
