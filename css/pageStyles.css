@@ -46,7 +46,6 @@ figure {
   align-items: center;
   overflow: hidden;
   color: #f9f9f9;
-  margin-top: 3rem;
 /*  z-index: 2;*/
 }
 
@@ -67,7 +66,6 @@ figure {
   border: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
   color: #00c6ff;
-  margin-top: 3rem;
 }
 
 
@@ -82,7 +80,8 @@ figure {
     gap: 6px;
     padding: 4px;
     border-radius: 10px;
-    background-color: black;	
+    background-color: transparent;
+	border: 1px solid;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     max-width: 100%;
     margin: auto;
