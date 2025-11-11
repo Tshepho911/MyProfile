@@ -22,6 +22,11 @@ body {
   height: 100%;
 }
 
+.project-grid {
+  display: grid;
+  background: red;
+}
+
 .page-bg {
   background: #1e1e1e;
   background-blend-mode: screen;

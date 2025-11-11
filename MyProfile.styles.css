@@ -1,3 +1,101 @@
+/* /Components/ProjectCard.razor.rz.scp.css */
+.project-card[b-0zk79babaj] {
+	display: flex;
+    flex-direction: column;
+ /*   background-color: saddlebrown;*/
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 1rem;
+    max-width: 400px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+	margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+	width: 100%;
+    box-sizing: border-box;
+	backdrop-filter: blur(3px);
+	
+}
+
+.project-card:hover[b-0zk79babaj] {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.project-card h2[b-0zk79babaj] {
+    margin-top: 0;
+    font-size: 1.2rem;
+	color: yellow;
+}
+
+.project-card h3[b-0zk79babaj] {
+   color: blue;
+}
+.project-card p[b-0zk79babaj] {
+    color: whitesmoke;
+}
+.tech-stack-container[b-0zk79babaj] {
+  position: relative;
+  max-width: 100%;
+}
+
+.tech-stack-preview[b-0zk79babaj] {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.tech-stack-full[b-0zk79babaj] {
+  display: none;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ /* position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  background: #fff;
+  padding: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  white-space: normal;
+  width: max-content;
+  max-width: 300px;*/
+}
+
+.tech-stack-container:hover .tech-stack-preview[b-0zk79babaj] {
+  display: none;
+}
+
+.tech-stack-container:hover .tech-stack-full[b-0zk79babaj] {
+  display: -webkit-box;;
+}
+
+.thumbnail[b-0zk79babaj] {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+.btn[b-0zk79babaj] {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #0078d4;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+
+
+ul[b-0zk79babaj] {
+	color: springgreen;
+}
 /* /GenericComponents/EmailFormComponent.razor.rz.scp.css */
 .emailform[b-mwphksso9r] {
 	background: transparent;
@@ -212,7 +310,6 @@ html[b-vf4pllc1qn] {
 .navmenu[b-vf4pllc1qn] {
   width: 100%;
   background-color: #0f2027;
-  padding: 1rem 0rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -872,14 +969,14 @@ display: none;
   max-width: 100%;
   background-color: transparent; /*rgba(222,222,222, 0.4);*/
   align-self: center;
-  text-align: left;
+  text-align: center;
   backdrop-filter: blur(2px);
-  border-radius: 18px;  
-  border: 1px solid rgba(255, 255, 255, 0.2);
+ /* border-radius: 18px;  
+  border: 1px solid rgba(255, 255, 255, 0.2);*/
   padding : 1rem;
   gap: 2rem;
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-family: Monoton;
   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
@@ -1055,7 +1152,8 @@ display: none;
   width: 100%;
   gap: 5rem;
  /* background-color: dodgerblue;*/  
-   justify-content: space-between;
+   justify-content: space-evenly;
+   align-content: center;
   padding-left: 24rem; 
   align-self: center;  
   font-size: 1.1rem;
@@ -1246,6 +1344,52 @@ display: none;
 	  }
 }
 
+/* /Pages/Projects.razor.rz.scp.css */
+.ProjectsPage[b-3s066wcx3n] {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+//no obsolete
+.projectsContainer[b-3s066wcx3n]{
+/*	display: flex;
+    flex-direction: row; /* Stack vertically */
+    align-items: center;     /* Center content horizontally */
+    padding: 2rem;
+}
+.project-grid[b-3s066wcx3n] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+    animation: fadeIn-b-3s066wcx3n 0.6s ease-in;
+	background: lightblue;
+	background-color: transparent;
+}
+
+@keyframes fadeIn-b-3s066wcx3n {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.filter-bar[b-3s066wcx3n] {
+	width: 400px;
+	background-color: color: #fe19fa;
+	color: white;
+}
+
+
+h1[b-3s066wcx3n] {
+	color: #fe19fa;
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+    .project-grid[b-3s066wcx3n] {
+        display: flex;
+        flex-direction: column;
+    }
+}
 /* /Pages/Services.razor.rz.scp.css */
 
 .myServicesPage[b-x28k3myjfn], .desktop[b-x28k3myjfn], .webApps[b-x28k3myjfn], .mobileApps[b-x28k3myjfn] {
